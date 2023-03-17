@@ -5,9 +5,9 @@
  *
  * Return: Always 0 (Success)
  *
- * filedes: file des 
- * buf: is the buffer 
- * nbyte: number of byte 
+ * Filedes: file des 
+ * Buf: is the buffer 
+ * Nbyte: number of byte 
  */
 
 /* prototype of function write*/
