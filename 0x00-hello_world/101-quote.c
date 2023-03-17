@@ -5,8 +5,10 @@
  *
  * Return: Always 0 (Success)
  *
+ * filedes buf nbyte
  */
- int write(int filedes, const char *buf, unsigned int nbyte); 
+
+int write(int filedes, const char *buf, unsigned int nbyte); 
 int main(void)
 {
 	/* main fuction */
