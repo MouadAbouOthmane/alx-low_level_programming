@@ -5,9 +5,12 @@
  *
  * Return: Always 0 (Success)
  *
- * filedes buf nbyte
+ * filedes: file des 
+ * buf: is the buffer 
+ * nbyte: number of byte 
  */
 
+/* prototype of function write*/
 int write(int filedes, const char *buf, unsigned int nbyte); 
 int main(void)
 {
