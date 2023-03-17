@@ -5,14 +5,12 @@
  *
  * Return: Always 0 (Success)
  *
+ * @filedes: dwadwa
+ * @buf: buffer
+ * @nbyte: number of byte
+ *
 */
 
-/* prototype of function write*/
-/**
- * Filedes: file des
- * Buf: is the buffer
- * Nbyte: number of byte
- */
 int write(int filedes, const char *buf, unsigned int nbyte);
 int main(void)
 {
