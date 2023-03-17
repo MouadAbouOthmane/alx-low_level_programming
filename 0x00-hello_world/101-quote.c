@@ -8,7 +8,7 @@
 */
 
 /* prototype of function write*/
-/** 
+/**
  * Filedes: file des
  * Buf: is the buffer
  * Nbyte: number of byte
