@@ -17,29 +17,32 @@ int main(void)
 		{
 			for (k = i; k < 10; k++)
 			{
-				for (l = j + 1; l < 10; l++)
+				if (k == i)
+				{
+					l = j + 1;
+				}
+				else
+				{
+					l = 0;
+				}
+
+				for (; l < 10; l++)
 				{
 
 					putchar(i + 48);
 					putchar(j + 48);
-
 					putchar(' ');
-
 					putchar(k + 48);
 					putchar(l + 48);
-
 					if (i != 9 || j != 8)
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
-
 			}
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
