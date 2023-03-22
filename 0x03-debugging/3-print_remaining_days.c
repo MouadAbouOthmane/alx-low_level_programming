@@ -14,7 +14,7 @@ void print_remaining_days(int month, int day, int year)
 {
 	/**
 	 * leap year can be divided by
-	 * 100 and also 400 
+	 * 100 and also 400
 	 * or by 4
 	 */
 
