@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - point portal 
+ * main - point portal
  *
  * Return: always 0
  */
