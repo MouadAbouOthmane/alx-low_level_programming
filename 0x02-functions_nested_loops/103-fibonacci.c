@@ -22,7 +22,7 @@ int main(void)
 		n2 = n1;
 		n1 = r;
 
-		if (r % 2 == 0)
+		if (r % 2 == 0 && r <= 4000000)
 		{
 			sum += r;
 		}
