@@ -4,7 +4,7 @@
  * mul - function that multiplies two integer
  *
  * @a: integer one
- * @b: integer two 
+ * @b: integer two
  *
  * Return: multipe a time b
  */
