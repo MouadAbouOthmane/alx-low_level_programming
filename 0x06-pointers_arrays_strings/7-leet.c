@@ -32,6 +32,10 @@ char *leet(char *s)
 		{
 			*s = 48 + 1;
 		}
+		else
+		{
+			*s = *s;
+		}
 
 		s++;
 	}
