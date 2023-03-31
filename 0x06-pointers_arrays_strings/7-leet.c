@@ -9,34 +9,19 @@
 char *leet(char *s)
 {
 	char *str = s;
-
+	char lett[] = {'A', 'E', 'O', 'T', 'L'};
+	int rep[] = {4, 3, 0, 7, 1};
+	int i;
+	
 	while (*s)
 	{
-		if (*s == 'A' || *s == 'a')
+		for (i = 0; i < 5; i++)
 		{
-			*s = 48 + 4;
+			if (*s == lett[i] || *s == lett[i] + 32)
+			{
+				*s = '0' + rep[i];
+			}
 		}
-		else if (*s == 'E' || *s == 'e')
-		{
-			*s = 48 + 3;
-		}
-		else if (*s == 'O' || *s == 'o')
-		{
-			*s = 48 + 0;
-		}
-		else if (*s == 'T' || *s == 't')
-		{
-			*s = 48 + 7;
-		}
-		else if (*s == 'L' || *s == 'l')
-		{
-			*s = 48 + 1;
-		}
-		else
-		{
-			*s = *s;
-		}
-
 		s++;
 	}
 	return (str);
