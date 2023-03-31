@@ -9,7 +9,6 @@
 char *leet(char *s)
 {
 	char *str = s;
-	int i;
 
 	while (*s != '\0')
 	{
