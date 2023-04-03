@@ -12,7 +12,7 @@ char *leet(char *s)
 	char lett[] = {'A', 'E', 'O', 'T', 'L'};
 	int rep[] = {4, 3, 0, 7, 1};
 	int i;
-	
+
 	while (*s)
 	{
 		for (i = 0; i < 5; i++)
