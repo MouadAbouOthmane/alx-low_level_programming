@@ -21,7 +21,6 @@ int main(int argc, char *argv[])
 		printf("%d\n", sum);
 		return (1);
 	}
-	
 	for (i = 1; i < argc; i++)
 	{
 		if (!atoi(argv[i]))
