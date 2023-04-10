@@ -1,24 +1,6 @@
 #include "main.h"
 
 /**
- * is_prime_number - check if number is prime.
- * @n: number.
- * Return: 1 if it prime otherwise 0.
- */
-int is_prime_number(int n)
-{
-	if (n <= 1)
-	{
-		return (0);
-	}
-	if (n == 2)
-	{
-		return (1);
-	}
-	return (prime(n, 2));
-}
-
-/**
  * prime - recusion for number and check if prime.
  * @number: prime number.
  * @i: iterator.
@@ -40,4 +22,22 @@ int prime(int number, int i)
 
 	return (prime(number, i + 1));
 
+}
+
+/**
+ * is_prime_number - check if number is prime.
+ * @n: number.
+ * Return: 1 if it prime otherwise 0.
+ */
+int is_prime_number(int n)
+{
+	if (n <= 1)
+	{
+		return (0);
+	}
+	if (n == 2)
+	{
+		return (1);
+	}
+	return (prime(n, 2));
 }
