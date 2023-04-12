@@ -30,7 +30,15 @@ int **alloc_grid(int w, int h)
 	for (i = 0; i < h; i++)
 	{
 		grid[i] = malloc(sizeof(**grid) * w);
-
+		if (grid[i] == 0)
+		{
+			while (i--)
+			{
+				free(grid[i]);
+			}
+			free(grid);
+			return (0);
+		}
 		for (j = 0; j < w; j++)
 		{
 			grid[i][j] = 0;
