@@ -20,7 +20,8 @@ int **alloc_grid(int w, int h)
 		return (0);
 	}
 
-	grid = malloc(sizeof(int) * w * h);
+	grid = malloc(sizeof(int) * w);
+	*grid = malloc(sizeof(int) * h);
 
 	if (grid == 0)
 	{
