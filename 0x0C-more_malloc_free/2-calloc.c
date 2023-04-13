@@ -12,21 +12,22 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *ptr;
+	unsigned n;
 
 	if (size == 0 || nmemb == 0)
 	{
 		return (0);
 	}
-
-	ptr = malloc(size * nmemb);
+	n = size * nmemb;
+	ptr = malloc(size * n);
 
 	if (ptr == 0)
 	{
 		return (0);
 	}
 
-	while (nmemb--)
-		ptr[nmemb] = 0;
+	while (n--)
+		ptr[n] = 0;
 
 	return (ptr);
 }
