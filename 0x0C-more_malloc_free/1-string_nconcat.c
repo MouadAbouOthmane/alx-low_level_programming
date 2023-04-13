@@ -21,12 +21,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	size1 = s1 ? strlen(s1) : 0;
 	size2 = s2 ? strlen(s2) : 0;
 
-	if (size2 >= (int) n)
+	if ((int) n < size2)
 	{
-		size2 = (int) n;
+		s = malloc(sizeof(char) * (size1 + n + 1));
 	}
-
-	s = malloc(sizeof(char) * (size1 + n + 1));
+	else
+	{
+		s = malloc(sizeof(char) * (size1 + size2 + 1));
+	}
 
 	if (s == 0)
 	{
