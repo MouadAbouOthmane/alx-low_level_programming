@@ -50,7 +50,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (i < (size1 + size2))
 		s[i++] = s2[j++];
 	**/
-	s[i + j + 1] = '\0';
+	s[i + j] = '\0';
 
 	return (s);
 }
