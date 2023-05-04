@@ -1,5 +1,32 @@
 #include "main.h"
-#include <math.h>
+
+/**
+ * pow - computes the power of a number.
+ *
+ * @x: double
+ * @y: double
+ *
+ * Return:the power raised to the base number.
+ */
+double _pow(double x, double y)
+{
+	int i = 0;
+	double r;
+
+	if (y == 0)
+		return (1);
+
+	r = x;
+	while (y - 1 > i)
+	{		
+		r *= x;
+		i++;
+	}
+
+	return (r);
+}
+
+
 
 /**
  * binary_to_uint - converts a binary number to an unsigned int.
@@ -24,7 +51,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 
 		d = b[i] == '1' ? 1 : 0; 
-		n += d * pow(2, (len - i) - 1);
+		n += d * _pow(2, (len - i) - 1);
 	}
 
 	return (n);
