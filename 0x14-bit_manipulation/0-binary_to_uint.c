@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * pow - computes the power of a number.
+ * _pow - computes the power of a number.
  *
  * @x: double
  * @y: double
@@ -18,7 +18,7 @@ double _pow(double x, double y)
 
 	r = x;
 	while (y - 1 > i)
-	{		
+	{
 		r *= x;
 		i++;
 	}
@@ -50,7 +50,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
 
-		d = b[i] == '1' ? 1 : 0; 
+		d = b[i] == '1' ? 1 : 0;
 		n += d * _pow(2, (len - i) - 1);
 	}
 
