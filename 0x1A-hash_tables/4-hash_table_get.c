@@ -23,13 +23,13 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	head = ht->array[index];
 
 	while (head)
-    {
-        if (strcmp(head->key, key) == 0)
-        {
-            return (head->value);
-        }
-        head = head->next;
-    }
+	{
+		if (strcmp(head->key, key) == 0)
+		{
+			return (head->value);
+		}
+		head = head->next;
+	}
 
-    return(NULL);    
+	return (NULL);
 }
