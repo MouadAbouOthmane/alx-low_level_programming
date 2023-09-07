@@ -33,7 +33,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(new_node);
 		return (0);
 	}
-
+	strcpy(new_node->key, key);
 	new_node->value = malloc(strlen(value) + 1);
 	if (!new_node->value)
 	{
@@ -41,6 +41,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(new_node);
 		return (0);
 	}
+	strcpy(new_node->value, value);
 
 	if (head)
 		new_node->next = head;
