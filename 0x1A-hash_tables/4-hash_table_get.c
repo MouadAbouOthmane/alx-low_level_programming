@@ -31,5 +31,5 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		head = head->next;
 	}
 
-	return (NULL);    
+	return (NULL);
 }
