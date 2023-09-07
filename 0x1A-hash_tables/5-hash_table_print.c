@@ -19,7 +19,7 @@ void hash_table_print(const hash_table_t *ht)
 	for (i = 0; i < ht->size; i++)
 	{
 		head = ht->array[i];
-	
+
 		while (head)
 		{
 			if (is_first == 1)
