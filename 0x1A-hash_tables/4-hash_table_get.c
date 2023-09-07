@@ -26,10 +26,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	{
 		if (strcmp(head->key, key) == 0)
 		{
-		    return (head->value);
+			return (head->value);
 		}
 		head = head->next;
 	}
 
-    return(NULL);    
+	return (NULL);    
 }
