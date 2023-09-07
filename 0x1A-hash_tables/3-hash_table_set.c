@@ -27,23 +27,21 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!new_node)
 		return (0);
 
-	new_node->key = malloc(strlen(key) + 1);
+	new_node->key = strdup(key);
 	if (!new_node->key)
 	{
 		free(new_node);
 		return (0);
 	}
-	strcpy(new_node->key, key);
 	if (value)
 	{
-		new_node->value = malloc(strlen(value) + 1);
+		new_node->value = strdup(value);
 		if (!new_node->value)
 		{
 			free(new_node->key);
 			free(new_node);
 			return (0);
 		}
-		strcpy(new_node->value, value);
 	}
 
 	if (head)
